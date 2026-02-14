@@ -1,0 +1,31 @@
+variable "application_name" {
+  type = string
+
+}
+
+variable "environment_name" {
+  type = string
+
+}
+
+variable "api_key" {
+  sensitive = true
+  type      = string
+}
+
+variable "instance_count" {
+  type = number
+}
+
+variable "enabled" {
+  type = bool
+}
+
+variable "regions" {
+  type = list(string)
+}
+
+variable "regions_instance_count" {
+   type = map(string)
+}
+
