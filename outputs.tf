@@ -23,3 +23,18 @@ output "instance_count" {
   value = var.instance_count
 }
 
+output "Primary_region" {
+  value = var.regions[0]
+}
+
+output "primary_region_instance_count" {
+  value = var.regions_instance_count[var.regions[2]]
+}
+
+output "kind" {
+  value = var.sku_settings.kind
+}
+
+output "tier" {
+   value = var.sku_settings.tier
+}
